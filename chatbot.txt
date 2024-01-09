@@ -1,0 +1,41 @@
+def def_greet():
+    return "Hello! I'm your friendly chatbot. How can I help you today?"
+
+def def_farewell():
+    return "Goodbye! Have a great day."
+
+def def_handle_question(question):
+    responses = {
+        "your capabilities": "I can answer questions, engage in conversation, and provide information.",
+        "purpose": "My purpose is to assist and engage with users in a friendly manner.",
+        "how are you": "I'm just a program, but thanks for asking! How can I assist you today?",
+        "your name": "I'm called Chatbot. What's on your mind?",
+        "meaning of life": "The meaning of life is a profound and philosophical question. Let's focus on something else!",
+        "how old are you":"Sorry! My age can't be determined",
+        "what is a chatbot":"Any software simulating human conversation, whether powered by traditional, rigid decision tree-style menu navigation or cutting edge conversational AI, is a chatbot.",
+        "how a chatbot works":"A chatbot is an automated conversational AI that pretends to be human and carries out programmed tasks based on specific triggers, responding through a web or mobile app.",
+        "Is siri is a chatbot":"Yes! Technologies like Siri, Alexa and Google Assistant that are ubiquitous in every household today are excellent examples of conversational AI.",
+        "how can I call you":"you can call me chatbot!",
+        "Do you express emotions or feelings":"No!I'm a chatbot which is known as machine in a your language and I don't have feelings at all!",
+        "Thank you!":"you are always welcome dear!",
+    }
+
+    return responses.get(question, "I'm not sure how to answer that. Can you ask something else?")
+
+def def_chat():
+    print(def_greet())
+
+    while True:
+        user_input = input("You: ").lower()
+        response = def_handle_question(user_input)
+        print("Bot:", response)
+
+        if user_input == "farewell":
+            print(def_farewell())
+            break
+        elif user_input == "no":
+            print(def_farewell())
+            break
+
+if _name_ == "_main_":
+    def_chat()
