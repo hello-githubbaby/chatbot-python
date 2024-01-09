@@ -39,3 +39,27 @@ def def_chat():
 
 if _name_ == "_main_":
     def_chat()
+
+output:
+Hello! I'm your friendly chatbot.How can I help you today?
+You: your capabilities
+Bot:I can answer questions, engage in conversation, and provide information.
+You:purpose
+Bot:My purpose is to assist and engage with users in a friendly manner.
+You:your name
+Bot:I'm called Chatbot. What's on your mind?
+You:how old are you
+Bot:Sorry! My age can't be determined
+You:how a chatbot works
+Bot:A chatbot is an automated conversational AI that pretends to be human and carries out programmed tasks based on specific triggers, responding through a web or mobile app.
+You:Is siri is a chatbot
+Bot:Yes! Technologies like Siri, Alexa and Google Assistant that are ubiquitous in every household today are excellent examples of conversational AI.
+You:how can I call you
+Bot:you can call me chatbot!
+You:Thank you
+Bot:you are always welcome dear!
+You:what are you doing
+Bot:I'm not sure how to answer that. Can you ask something else?
+You:no
+Bot:I'm not sure how to answer that. Can you ask something else?
+Goodbye! Have a great day.
